@@ -7,8 +7,8 @@ const Cart = () => {
     const signUp=()=>{
         router.push('/Signup')
     }
-    const login=()=>{
-        router.push('/Login')
+    const Checkout=()=>{
+        router.push('/Checkout')
     }
   return (
     <div>
@@ -30,12 +30,12 @@ const Cart = () => {
                     <div class="row mb-4 d-flex justify-content-between align-items-center">
                       <div class="col-md-2 col-lg-2 col-xl-2">
                         <Image
-                          src="/S1.jpg" width={50} height={50}
+                          src="/S2.jpg" width={50} height={50}
                           class="img-fluid rounded-3" alt="Cotton T-shirt"/>
                       </div>
                       <div class="col-md-3 col-lg-3 col-xl-3">
-                        <h6 class="text-muted">Shirt</h6>
-                        <h6 class="text-black mb-0">Cotton T-shirt</h6>
+                        <h6 class="text-muted">Socks</h6>
+                        <h6 class="text-black mb-0">Cotton Socks</h6>
                       </div>
                       <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
                         <button class="btn btn-link px-2"
@@ -52,7 +52,7 @@ const Cart = () => {
                         </button>
                       </div>
                       <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                        <h6 class="mb-0">€ 44.00</h6>
+                        <h6 class="mb-0">$ 50.00</h6>
                       </div>
                       <div class="col-md-1 col-lg-1 col-xl-1 text-end">
                         <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
@@ -64,12 +64,12 @@ const Cart = () => {
                     <div class="row mb-4 d-flex justify-content-between align-items-center">
                       <div class="col-md-2 col-lg-2 col-xl-2">
                         <Image
-                          src="/S2.jpg" width={50} height={50}
+                          src="/S1.jpg" width={50} height={50}
                           class="img-fluid rounded-3" alt="Cotton T-shirt"/>
                       </div>
                       <div class="col-md-3 col-lg-3 col-xl-3">
-                        <h6 class="text-muted">Shirt</h6>
-                        <h6 class="text-black mb-0">Cotton T-shirt</h6>
+                        <h6 class="text-muted">Watch</h6>
+                        <h6 class="text-black mb-0">Formal Watch</h6>
                       </div>
                       <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
                         <button class="btn btn-link px-2"
@@ -86,7 +86,7 @@ const Cart = () => {
                         </button>
                       </div>
                       <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                        <h6 class="mb-0">€ 44.00</h6>
+                        <h6 class="mb-0">$ 445.50</h6>
                       </div>
                       <div class="col-md-1 col-lg-1 col-xl-1 text-end">
                         <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
@@ -102,8 +102,8 @@ const Cart = () => {
                           class="img-fluid rounded-3" alt="Cotton T-shirt"/>
                       </div>
                       <div class="col-md-3 col-lg-3 col-xl-3">
-                        <h6 class="text-muted">Shirt</h6>
-                        <h6 class="text-black mb-0">Cotton T-shirt</h6>
+                        <h6 class="text-muted">Tie</h6>
+                        <h6 class="text-black mb-0">Sartin Tie</h6>
                       </div>
                       <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
                         <button class="btn btn-link px-2"
@@ -120,7 +120,7 @@ const Cart = () => {
                         </button>
                       </div>
                       <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                        <h6 class="mb-0">€ 44.00</h6>
+                        <h6 class="mb-0">$ 44.50</h6>
                       </div>
                       <div class="col-md-1 col-lg-1 col-xl-1 text-end">
                         <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
@@ -142,17 +142,17 @@ const Cart = () => {
   
                     <div class="d-flex justify-content-between mb-4">
                       <h5 class="text-uppercase">items 3</h5>
-                      <h5>€ 132.00</h5>
+                      <h5>€ 540.00</h5>
                     </div>
   
                     <h5 class="text-uppercase mb-3">Shipping</h5>
   
                     <div class="mb-4 pb-2">
                       <select class="select">
-                        <option value="1">Standard-Delivery- €5.00</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        <option value="4">Four</option>
+                        <option value="1">Standard-Delivery- $10.00</option>
+                        <option value="2">Within 1 Day</option>
+                        <option value="3">Within 1 Week</option>
+                        <option value="4">Emergency</option>
                       </select>
                     </div>
   
@@ -169,14 +169,15 @@ const Cart = () => {
   
                     <div class="d-flex justify-content-between mb-5">
                       <h5 class="text-uppercase">Total price</h5>
-                      <h5>€ 137.00</h5>
+                      <h5>$ 550.00</h5>
                     </div>
-                    <button type="button" class="btn btn-dark btn-block btn-lg"
-                      data-mdb-ripple-color="dark" onClick={login}>Login</button>
+                    <h7 class="text-black mb-0">You must Login/SignUp to continue.</h7>
                     <br/>
                     <br/>
                     <button type="button" class="btn btn-dark btn-block btn-lg"
-                      data-mdb-ripple-color="dark" onClick={signUp}>Sign Up</button>
+                      data-mdb-ripple-color="dark" onClick={Checkout}>Checkout</button>
+                    <br/>
+                    <br/>
   
                   </div>
                 </div>

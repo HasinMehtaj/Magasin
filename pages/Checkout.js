@@ -1,56 +1,84 @@
 import React from 'react'
-import { useRouter } from 'next/router';
-
+import Image from 'next/image'
 
 const Checkout = () => {
-  let router=useRouter();
-  const backHome=()=>{
-      router.push('/')
-  }
   return (
     <div>
-       <form>
-  <div className="mb-3">
-    <label for="exampleInputEmail1" className="form-label">Shipping address</label>
-    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-    <div id="emailHelp" className="form-text">We'll never share your personal information with anyone else.</div>
-  </div>
-  <div className="mb-3">
-    <label for="exampleInputPassword1" className="form-label">Phone Number</label>
-    <input type="password" className="form-control" id="exampleInputPassword1"/>
-  </div>
-  <div className="mb-3">
-    <label for="exampleInputPassword1" className="form-label">E-mail</label>
-    <input type="password" className="form-control" id="exampleInputPassword1"/>
-  </div>
+      <section class="p-4 p-md-5">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-10 col-lg-8 col-xl-5">
+      <div class="card rounded-3">
+        <div class="card-body p-4">
+          <div class="text-center mb-4">
+            <h3>Checkout</h3>
+            <h6>Payment</h6>
+          </div>
+          <form action="">
+            <p class="fw-bold mb-4 pb-2">Saved cards:</p>
 
-  <div class="input-group mb-3">
-  <button type="button" class="btn btn-outline-secondary">Select Method of Payment</button>
-  <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-    <span class="visually-hidden">Toggle Dropdown</span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li><hr class="dropdown-divider"/></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
-  </ul>
-  <input type="text" class="form-control" aria-label="Text input with segmented dropdown button"/>
-  
-</div>
-<div class="input-group">
-  
-  <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)"/>
-  <span class="input-group-text">$</span>
-  <span class="input-group-text">0.00</span>
-</div>
-  <div className="mb-3 form-check">
-    <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-    <label className="form-check-label" for="exampleCheck1">I agree to all the terms and privacy, and accept the no refund policy in case of cancellation of any product and/or destruction while shipping.</label>
+            <div class="d-flex flex-row align-items-center mb-4 pb-1">
+              <img class="img-fluid" src="https://img.icons8.com/color/48/000000/mastercard-logo.png" />
+              <div class="flex-fill mx-3">
+                <div class="form-outline">
+                  <input type="text" id="formControlLgXc" class="form-control form-control-lg"
+                    value="**** **** **** 3193" />
+                  <label class="form-label" for="formControlLgXc">Card Number</label>
+                </div>
+              </div>
+              <a href="#!">Remove card</a>
+            </div>
+
+            <div class="d-flex flex-row align-items-center mb-4 pb-1">
+              <img class="img-fluid" src="https://img.icons8.com/color/48/000000/visa.png" />
+              <div class="flex-fill mx-3">
+                <div class="form-outline">
+                  <input type="text" id="formControlLgXs" class="form-control form-control-lg"
+                    value="**** **** **** 4296" />
+                  <label class="form-label" for="formControlLgXs">Card Number</label>
+                </div>
+              </div>
+              <a href="#!">Remove card</a>
+            </div>
+
+            <p class="fw-bold mb-4">Add new card:</p>
+
+            <div class="form-outline mb-4">
+              <input type="text" id="formControlLgXsd" class="form-control form-control-lg"
+                value="Anna Doe" />
+              <label class="form-label" for="formControlLgXsd">Cardholder's Name</label>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-7">
+                <div class="form-outline">
+                  <input type="text" id="formControlLgXM" class="form-control form-control-lg"
+                    value="1234 5678 1234 5678" />
+                  <label class="form-label" for="formControlLgXM">Card Number</label>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="form-outline">
+                  <input type="password" id="formControlLgExpk" class="form-control form-control-lg"
+                    placeholder="MM/YYYY" />
+                  <label class="form-label" for="formControlLgExpk">Expire</label>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="form-outline">
+                  <input type="password" id="formControlLgcvv" class="form-control form-control-lg"
+                    placeholder="Cvv" />
+                  <label class="form-label" for="formControlLgcvv">Cvv</label>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-success btn-lg btn-block">Pay Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
-  <button class="btn btn-primary" onClick={backHome}>Checkout</button>
-</form>
+</section>
     </div>
   )
 }

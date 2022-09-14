@@ -11,13 +11,13 @@ const Signup = () => {
         <div class="card card-registration my-4">
           <div class="row g-0">
             <div class="col-xl-6 d-none d-xl-block">
-              <Image src="/123.png"
+              <Image src="/123.jpg"
                 alt="Sample photo" class="img-fluid"
-                 width={300} height={300}/>
+                 width={1500} height={2500}/>
             </div>
             <div class="col-xl-6">
               <div class="card-body p-md-5 text-black">
-                <h3 class="mb-5 text-uppercase">Student registration form</h3>
+                <h3 class="mb-5 text-uppercase">Sign Up!</h3>
 
                 <div class="row">
                   <div class="col-md-6 mb-4">
@@ -38,13 +38,13 @@ const Signup = () => {
                   <div class="col-md-6 mb-4">
                     <div class="form-outline">
                       <input type="text" id="form3Example1m1" class="form-control form-control-lg" />
-                      <label class="form-label" for="form3Example1m1">Mother's name</label>
+                      <label class="form-label" for="form3Example1m1">Contact Number</label>
                     </div>
                   </div>
                   <div class="col-md-6 mb-4">
                     <div class="form-outline">
                       <input type="text" id="form3Example1n1" class="form-control form-control-lg" />
-                      <label class="form-label" for="form3Example1n1">Father's name</label>
+                      <label class="form-label" for="form3Example1n1">Occupation</label>
                     </div>
                   </div>
                 </div>
@@ -83,9 +83,9 @@ const Signup = () => {
 
                     <select class="select">
                       <option value="1">State</option>
-                      <option value="2">Option 1</option>
-                      <option value="3">Option 2</option>
-                      <option value="4">Option 3</option>
+                      <option value="2">New York</option>
+                      <option value="3">Florida</option>
+                      <option value="4">California</option>
                     </select>
 
                   </div>
@@ -93,9 +93,9 @@ const Signup = () => {
 
                     <select class="select">
                       <option value="1">City</option>
-                      <option value="2">Option 1</option>
-                      <option value="3">Option 2</option>
-                      <option value="4">Option 3</option>
+                      <option value="2">Chicago</option>
+                      <option value="3">Washington D.C.</option>
+                      <option value="4">Seattle</option>
                     </select>
 
                   </div>
@@ -108,12 +108,12 @@ const Signup = () => {
 
                 <div class="form-outline mb-4">
                   <input type="text" id="form3Example90" class="form-control form-control-lg" />
-                  <label class="form-label" for="form3Example90">Pincode</label>
+                  <label class="form-label" for="form3Example90">Postal Code</label>
                 </div>
 
                 <div class="form-outline mb-4">
                   <input type="text" id="form3Example99" class="form-control form-control-lg" />
-                  <label class="form-label" for="form3Example99">Course</label>
+                  <label class="form-label" for="form3Example99">Pincode</label>
                 </div>
 
                 <div class="form-outline mb-4">
@@ -123,7 +123,7 @@ const Signup = () => {
 
                 <div class="d-flex justify-content-end pt-3">
                   <button type="button" class="btn btn-light btn-lg">Reset all</button>
-                  <button type="button" class="btn btn-warning btn-lg ms-2">Submit form</button>
+                  <button type="button" class="btn btn-primary btn-lg ms-2">Submit form</button>
                 </div>
 
               </div>

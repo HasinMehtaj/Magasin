@@ -25,15 +25,14 @@ const Navbar = () => {
         <Link href="/Cart"><li class="nav-item">
           <a class="nav-link" href="#">Cart</a>
         </li></Link>
-        <Link href="/Login"><li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
-        </li></Link>
-       
          
         <Link href="/Checkout"><li class="nav-item">
           <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Checkout
           </a> 
+        </li></Link>
+        <Link href="/Login"><li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
         </li></Link>
       </ul>
     </div>

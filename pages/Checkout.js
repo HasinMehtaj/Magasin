@@ -1,7 +1,12 @@
 import React from 'react'
+import { useRouter } from 'next/router';
 
 
 const Checkout = () => {
+  let router=useRouter();
+  const backHome=()=>{
+      router.push('/')
+  }
   return (
     <div>
        <form>
@@ -44,7 +49,7 @@ const Checkout = () => {
     <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
     <label className="form-check-label" for="exampleCheck1">I agree to all the terms and privacy, and accept the no refund policy in case of cancellation of any product and/or destruction while shipping.</label>
   </div>
-  <button type="submit" className="btn btn-primary">Checkout</button>
+  <button class="btn btn-primary" onClick={backHome}>Checkout</button>
 </form>
     </div>
   )

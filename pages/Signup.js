@@ -17,7 +17,7 @@ const submit=()=>{
         <div class="card card-registration my-4">
           <div class="row g-0">
             <div class="col-xl-6 d-none d-xl-block">
-              <Image src="/123.jpg"
+              <Image src="/123.png"
                 alt="Sample photo" class="img-fluid"
                  width={1500} height={2500}/>
             </div>

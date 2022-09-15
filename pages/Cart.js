@@ -151,9 +151,9 @@ const Cart = () => {
                     <div class="mb-4 pb-2">
                       <select class="select">
                         <option value="1">Standard-Delivery- $10.00</option>
-                        <option value="2">Within 1 Day</option>
-                        <option value="3">Within 1 Week</option>
-                        <option value="4">Emergency</option>
+                        <option value="2">Within 1 Day- $30.00</option>
+                        <option value="3">Within 1 Week- $20.00</option>
+                        <option value="4">Urgent- $50.00</option>
                       </select>
                     </div>
   

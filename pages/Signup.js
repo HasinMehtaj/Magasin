@@ -1,7 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
+
 
 const Signup = () => {
+let router=useRouter()
+const submit=()=>{
+  router.push('/')
+}
   return (
     <div>
       <section class="h-100 bg-dark">
@@ -123,7 +129,7 @@ const Signup = () => {
 
                 <div class="d-flex justify-content-end pt-3">
                   <button type="button" class="btn btn-light btn-lg">Reset all</button>
-                  <button type="button" class="btn btn-primary btn-lg ms-2">Submit form</button>
+                  <button type="button" class="btn btn-primary btn-lg ms-2" onClick={submit}>Submit form</button>
                 </div>
 
               </div>

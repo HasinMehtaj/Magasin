@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const Cart = () => {
     let router=useRouter();
@@ -130,8 +131,8 @@ const Cart = () => {
                     <hr class="my-4"/>
   
                     <div class="pt-5">
-                      <h6 class="mb-0"><a href="#!" class="text-body"><i
-                            class="fas fa-long-arrow-alt-left me-2"></i>Back to shop</a></h6>
+                     <Link href='/Product'><h6 class="mb-0"><a href="#!" class="text-body"><i
+                            class="fas fa-long-arrow-alt-left me-2"></i>Back to shop</a></h6></Link>
                     </div>
                   </div>
                 </div>
@@ -171,7 +172,7 @@ const Cart = () => {
                       <h5 class="text-uppercase">Total price</h5>
                       <h5>$ 550.00</h5>
                     </div>
-                    <h7 class="text-black mb-0">You must Login/SignUp to continue.</h7>
+                    <h7 class="text-black mb-0">You must <Link href='/Login'>Login</Link>/<Link href='/Signup'>SignUp</Link> to continue.</h7>
                     <br/>
                     <br/>
                     <button type="button" class="btn btn-dark btn-block btn-lg"

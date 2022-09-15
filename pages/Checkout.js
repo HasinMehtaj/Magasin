@@ -1,7 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 
+
 const Checkout = () => {
+  const payment=()=>{
+alert('Payment Successful!')
+}
   return (
     <div>
       <section class="p-4 p-md-5">
@@ -72,7 +76,7 @@ const Checkout = () => {
               </div>
             </div>
 
-            <button class="btn btn-success btn-lg btn-block">Pay Now</button>
+            <button class="btn btn-success btn-lg btn-block" onClick={payment}>Pay Now</button>
           </form>
         </div>
       </div>
